@@ -1,9 +1,9 @@
 # GZIP gin's middleware
 
-[![Run Tests](https://github.com/gin-contrib/gzip/actions/workflows/go.yml/badge.svg)](https://github.com/gin-contrib/gzip/actions/workflows/go.yml)
+<!-- [![Run Tests](https://github.com/crlogic/gzip/actions/workflows/go.yml/badge.svg)](https://github.com/crlogic/gzip/actions/workflows/go.yml)
 [![codecov](https://codecov.io/gh/gin-contrib/gzip/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-contrib/gzip)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gin-contrib/gzip)](https://goreportcard.com/report/github.com/gin-contrib/gzip)
-[![GoDoc](https://godoc.org/github.com/gin-contrib/gzip?status.svg)](https://godoc.org/github.com/gin-contrib/gzip)
+[![Go Report Card](https://goreportcard.com/badge/github.com/crlogic/gzip)](https://goreportcard.com/report/github.com/crlogic/gzip)
+[![GoDoc](https://godoc.org/github.com/crlogic/gzip?status.svg)](https://godoc.org/github.com/crlogic/gzip) -->
 
 Gin middleware to enable `GZIP` support.
 
@@ -12,13 +12,13 @@ Gin middleware to enable `GZIP` support.
 Download and install it:
 
 ```sh
-go get github.com/gin-contrib/gzip
+go get github.com/crlogic/gzip
 ```
 
 Import it in your code:
 
 ```go
-import "github.com/gin-contrib/gzip"
+import "github.com/crlogic/gzip"
 ```
 
 Canonical example:
@@ -31,7 +31,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-contrib/gzip"
+  "github.com/crlogic/gzip"
   "github.com/gin-gonic/gin"
 )
 
@@ -59,7 +59,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-contrib/gzip"
+  "github.com/crlogic/gzip"
   "github.com/gin-gonic/gin"
 )
 
@@ -87,7 +87,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-contrib/gzip"
+  "github.com/crlogic/gzip"
   "github.com/gin-gonic/gin"
 )
 
@@ -115,7 +115,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-contrib/gzip"
+  "github.com/crlogic/gzip"
   "github.com/gin-gonic/gin"
 )
 

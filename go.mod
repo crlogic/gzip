@@ -1,4 +1,4 @@
-module github.com/gin-contrib/gzip
+module github.com/crlogic/gzip
 
 go 1.21.0
 
