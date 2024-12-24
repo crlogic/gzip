@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gin-contrib/gzip"
+	"github.com/crlogic/gzip"
 	"github.com/gin-gonic/gin"
 )
 
