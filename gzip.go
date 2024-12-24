@@ -2,6 +2,7 @@ package gzip
 
 import (
 	"compress/gzip"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -29,11 +30,19 @@ func (g *gzipWriter) WriteString(s string) (int, error) {
 
 func (g *gzipWriter) Write(data []byte) (int, error) {
 	g.Header().Del("Content-Length")
+	g.setContentLen(data)
+
 	return g.writer.Write(data)
 }
 
 // Fix: https://github.com/mholt/caddy/issues/38
-func (g *gzipWriter) WriteHeader(code int) {
-	g.Header().Del("Content-Length")
-	g.ResponseWriter.WriteHeader(code)
+// func (g *gzipWriter) WriteHeader(code int) {
+// 	g.Header().Del("Content-Length")
+// 	g.ResponseWriter.WriteHeader(code)
+// }
+
+func (g *gzipWriter) setContentLen(b []byte) {
+	contentLen := len(b)
+	lenStr := strconv.Itoa(contentLen)
+	g.Header().Set("Content-Length", lenStr)
 }
